@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: Sweetbid_production
   username: Sweetbid
   password: <%= ENV['SWEETBID_DATABASE_PASSWORD'] %>
