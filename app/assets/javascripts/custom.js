@@ -109,7 +109,7 @@ if (matchMedia('(min-width: 640px)').matches) {
       "align": "centerXY",
       "width": 1280,
       "height": 720,
-      "path": "/app/assets/video/",
+      "path": "/assets/",
       "filename": "video",
       "types": ["mp4","ogg","webm"]
     });
