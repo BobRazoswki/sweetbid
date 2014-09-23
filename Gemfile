@@ -15,17 +15,18 @@ group :development, :test do
 	gem 'rspec-collection_matchers'
 end
 
+gem 'rails_12factor', group: :production
 gem 'simple_form'
 gem 'mail_form'
 gem 'jquery-ui-rails'
-gem "font-awesome-rails"
 gem 'bootstrap-sass', '~> 3.2.0.0'
 gem 'sass-rails', '>= 3.2'
 gem 'autoprefixer-rails'
 gem 'aws-sdk'
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 gem 'bootstrap-filestyle-rails'
-gem 'rails_12factor'
+gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 
 gem 'rails', '4.1.4'
 gem 'pg'
