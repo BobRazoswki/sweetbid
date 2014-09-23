@@ -1,0 +1,25 @@
+<section id="nos-realisations">
+		<ul class="row">
+		  <% 1.upto(6) do |n| %>
+		  	<li class="col-md-4 masonry">
+		  		<span class="wow bounceIn animated" data-wow-offset="10" data-wow-duration="1.5s" >
+		  			<% site = {1 => "http://www.cabinetplisson.fr",
+		  			           2 => "http://www.dettacheedepresse.com", 
+		  			           3 => "http://www.dominiquepiveteaud.com", 
+		  			           4 => "http://www.beborderline.fr", 
+		  			           5 => "http://www.lecaennais.fr", 
+		  			           6 => "http://www.batorec.fr" } 
+		  			%>
+
+		  		<a class="masonry-a" href="<%= site.values_at(n).join %>">
+		  			<%= image_tag "site/site-#{n}.png", class: "masonry-img masonry-img-#{n}" %>
+		  			<div class="click-site-container">
+		  				<span class='click-site fa fa-link'></span>
+		  			</div>
+		  		</a>
+
+		  		</span> 
+		  	</li>
+		  <% end %>
+		</ul>
+</section>
