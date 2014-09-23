@@ -210,7 +210,7 @@ DEPENDENCIES
   autoprefixer-rails
   aws-sdk
   bootstrap-filestyle-rails
-  bootstrap-sass (~> 3.2.0)
+  bootstrap-sass (~> 3.2.0.0)
   byebug
   capybara
   codeclimate-test-reporter

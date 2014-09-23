@@ -19,7 +19,7 @@ gem 'simple_form'
 gem 'mail_form'
 gem 'jquery-ui-rails'
 gem "font-awesome-rails"
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass', '~> 3.2.0.0'
 gem 'sass-rails', '>= 3.2'
 gem 'autoprefixer-rails'
 gem 'aws-sdk'
