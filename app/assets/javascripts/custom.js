@@ -300,6 +300,10 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   document.querySelector('head').appendChild(msViewportStyle)
 }
 
+/* =================================
+===  Our relisations section
+=================================== */
+
 $( ".masonry-img" ).click(function() {
   $(this).removeClass('ui-effects-wrapper').effect("bounce", { times: 3 },{ distance: 2 }, "slow" );
 });
@@ -308,6 +312,7 @@ $( ".masonry-img" ).mouseover(function() {
   $(this).addClass('site-effects');
 });
 
+
 $(".click-site-container").hide();
 
 $(".masonry-img").hover(function() {
@@ -315,8 +320,7 @@ $(".masonry-img").hover(function() {
 }, function () {
     $(this).next().fadeOut();
 });
-    /*$(".click-site-container").next().fadeIn();
-    .append("<span class='click-site fa fa-link'></span>");*/
+    
 
 
 
