@@ -1,3 +1,19 @@
+$(".click-site-container").hide();
+
+$( ".masonry-img" ).click(function() {
+  $(this).removeClass('ui-effects-wrapper').effect("bounce", { times: 3 },{ distance: 2 }, "slow" );
+});
+
+$( ".masonry-img" ).mouseover(function() {
+  $(this).addClass('site-effects');
+});
+
+$(".masonry-img").hover(function() {
+    $(this).next().fadeIn(); 
+}, function () {
+    $(this).next().fadeOut();
+});
+
 /* =================================
    LOADER                     
 =================================== */
@@ -304,22 +320,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 ===  Our relisations section
 =================================== */
 
-$( ".masonry-img" ).click(function() {
-  $(this).removeClass('ui-effects-wrapper').effect("bounce", { times: 3 },{ distance: 2 }, "slow" );
-});
 
-$( ".masonry-img" ).mouseover(function() {
-  $(this).addClass('site-effects');
-});
-
-
-$(".click-site-container").hide();
-
-$(".masonry-img").hover(function() {
-    $(this).next().fadeIn(); 
-}, function () {
-    $(this).next().fadeOut();
-});
     
 
 
