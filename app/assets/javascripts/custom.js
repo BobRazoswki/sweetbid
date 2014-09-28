@@ -8,6 +8,8 @@ $( ".masonry-img" ).mouseover(function() {
   $(this).addClass('site-effects');
 });
 
+$(".click-site").hide();
+
 $(".masonry-img").hover(function() {
     $(this).next().fadeIn(); 
 }, function () {
