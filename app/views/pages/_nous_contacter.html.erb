@@ -2,41 +2,31 @@
 <footer>
 
 <div class="container">
-
-<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
+	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
 		<%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-  <div class="col-md-6">
-    <%= f.input :name, :required => true, class: "form-control input-box", id: "name", name: "name", placeholder: "Votre nom" %>
-  </div>
+		  <div class="col-md-6">
+		    <%= f.input :name, :required => true, class: "form-control input-box", id: "name", name: "name", placeholder: "Votre nom" %>
+		  </div>
 
-  <div class="col-md-6">
-    <%= f.input :email, :required => true, class: "form-control input-box", id: "email", name: "email", placeholder: "Votre email" %>
-  </div>
+		  <div class="col-md-6">
+		    <%= f.input :email, :required => true, class: "form-control input-box", id: "email", name: "email", placeholder: "Votre email" %>
+		  </div>
 
-<div class="col-md-12">
-    <%= f.input :subject, :as => :text, :required => true, class: "form-control input-box", id: "subject", name: "subject", placeholder: "Sujet" %>
-    <%= f.input :message, :as => :text, :required => true, class: "form-control input-box", id: "message", name: "message", placeholder: "Dites nous tout !" %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-    </div>
-  </div>
-    <div>
-      </br>
+			<div class="col-md-12">
+		    <%= f.input :subject, :as => :text, :required => true, class: "form-control input-box", id: "subject", name: "subject", placeholder: "Sujet" %>
+		    <%= f.input :message, :as => :text, :required => true, class: "form-control input-box", id: "message", name: "message", placeholder: "Dites nous tout !" %>
+			    <div class= "hidden">
+			      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+			    </div>
+			 </div>
+    </br>
       <button class="btn btn-primary standard-button2 ladda-button" id="submit" name="submit" data-style="expand-left">
-      <%= f.button :submit, 'Send message', class: "btn btn-primary" %>
-    </button>
-    </div>
-  <% end %>
-			</div>
-			
-		</div>
-		<!-- /END EXPANDED CONTACT FORM -->
-		
+     	 <%= f.button :submit, 'Send message', class: "btn btn-primary" %>
+    	</button>
+  	<% end %>
 	</div>
-	<!-- /END CONTACT BOX -->
-
 </div>
+
 	<!-- LOGO -->
 	<%= image_tag 'logo-black.png', class: 'responsive-img' %>
 	
