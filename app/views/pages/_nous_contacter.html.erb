@@ -1,41 +1,42 @@
-<<<<<<< HEAD
-=======
-<!-- =========================
-     FOOTER 
-============================== -->
->>>>>>> parent of f02c599... check
 <section id="nous-contacter">
 <footer>
 
 <div class="container">
-	
-	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
 		
-		<!-- CONTACT BUTTON TO EXPAND OR COLLAPSE FORM -->
+		<%= simple_form_for @contact, :html => {:class => 'form-horizontal' }, id: "contact" do |f| %>
+  <div class="col-md-6">
+    <%= f.input :name, :required => true, class: "form-control input-box", id: "name", name: "name", placeholder: "Votre nom" %>
+  </div>
 
-		<div align="center">
-  <h3>Send A message to Us</h3>
+  <div class="col-md-6">
+    <%= f.input :email, :required => true, class: "form-control input-box", id: "email", name: "email", placeholder: "Votre email" %>
+  </div>
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
+<div class="col-md-12">
+    <%= f.input :subject, :as => :text, :required => true, class: "form-control input-box", id: "subject", name: "subject", placeholder: "Sujet" %>
+    <%= f.input :message, :as => :text, :required => true, class: "form-control input-box", id: "message", name: "message", placeholder: "Dites nous tout !" %>
     <div class= "hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
     </div>
+  </div>
     <div>
       </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+      <button class="btn btn-primary standard-button2 ladda-button" id="submit" name="submit" data-style="expand-left">
+      <%= f.button :submit, 'Send message', class: "btn btn-primary" %>
+    </button>
     </div>
   <% end %>
-</div>
-
-		<a class="btn contact-button expand-form expanded"><i class="icon_mail_alt"></i></a>
-		
+			</div>
+			
+		</div>
+		<!-- /END EXPANDED CONTACT FORM -->
 		
 	</div>
 	<!-- /END CONTACT BOX -->
-	
+
+</div>
 	<!-- LOGO -->
 	<%= image_tag 'logo-black.png', class: 'responsive-img' %>
 	
