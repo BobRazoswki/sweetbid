@@ -13,8 +13,10 @@ group :development, :test do
 	gem 'byebug'
 	gem 'poltergeist'
 	gem 'rspec-collection_matchers'
+	gem 'foreman'
 end
 
+gem 'mailgun_rails'
 gem 'font-awesome-rails'
 gem 'rails_12factor', group: :production
 gem 'simple_form'
