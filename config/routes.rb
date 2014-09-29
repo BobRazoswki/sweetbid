@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   #get 'contact_form/create'
 
-  root to: "pages#home"
+  root to: "layouts/application"
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
 resources "contacts", only: [:new, :create]
