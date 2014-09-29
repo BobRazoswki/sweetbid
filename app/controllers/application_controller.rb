@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def setup_new_contact
-  	@contact = Contact.new
+		@contact = Contact.new
   end
 
 end
