@@ -5,7 +5,7 @@
 
 <div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
 		
-		<%= simple_form_for @contact, :html => {:class => 'form-horizontal' }, id: "contact" do |f| %>
+		<%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
   <div class="col-md-6">
     <%= f.input :name, :required => true, class: "form-control input-box", id: "name", name: "name", placeholder: "Votre nom" %>
   </div>
