@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   
-  def new
+  def _new
     @contact = Contact.new
   end
 
@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
       flash.now[:error] = 'Cannot send message.'
      render :new
     end
-    
+
   end
 
 end
